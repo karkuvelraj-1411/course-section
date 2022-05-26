@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+@font-face{
+  font-family:Montserrat;
+  src: url(font/Helvetica-Font/Helvetica-BoldOblique.ttf);
+}
+
+
+.card{
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    color: black;
+    font-weight: bold;
+   background: linear-gradient(90deg,#b2e4ec , #c9d5e9);
+  }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    
+     /* height: 50vh;  */
+     /* width: 100%;  */
+  }
+  .card-container .card .c1{
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .card-container .card .c1 h1{
+    font-size: 2rem ;
+  }
+   .card-container .card .c1 p{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    
+  }
+  .card-container .card .c1 .learn h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+
+  .card-container .card .course-logo{
+    
+   margin-top: 10px;
+   margin-right: 25px;
+  }
+  .card-container .card:hover{
+    transition: 0.2s;
+    transform: translatey(3px);
+    transition: 0.3s;
+  }
+  .topic{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+  .card-container .card .c1 .clicked{
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color:#34b4eb;
+    color: white;
+  
+  }
+  .card-container .card .c1 .clicked:hover{
+    background-color: white;
+    color: black;
+  }
+  .card{
+    box-shadow:  10px 10px 5px  #aaaaaa;
+  }
+  
+
+  @media screen and (max-width:1028px){
+
+  .card-container{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin: auto;
+  } 
+  .card-container .card .course-logo{
+    margin-top: 30px;
+
+  }
+  .card{
+    justify-content: space-between;
+  }
+
+   .card{
+    width: 80%;
+    margin-right: 30px;
+    margin-left:30px ;
+  }
+}
